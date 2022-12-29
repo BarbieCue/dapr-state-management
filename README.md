@@ -36,7 +36,7 @@ dapr run --app-id my-service --app-port 8080 --app-protocol http --dapr-http-por
 As you can see, the dapr CLI is used to start up both, the dapr sidecar and the service.
 
 
-### 3. Be the client - view the dashboard
+### 3. Be the client - trigger the saving of the data
 ```shell
 curl http://localhost:8080
 ```
