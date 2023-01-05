@@ -1,7 +1,3 @@
-
-Erkläre components yml
-
-
 # dapr example - state management
 
 <a href="https://www.dapr.io/"><img src="docs/dapr.svg" alt="dapr" width="100" /></a>
@@ -54,7 +50,7 @@ Components are configured at design-time with a YAML file which is stored in eit
 - _A `components/local` folder within your solution, or_
 - _Globally in the `.dapr` folder created when invoking `dapr init`._
 
-In this project, the configuration file is placed inside the solution.
+In this project, the configuration file is placed inside the _solution_.
 
 # References
 - [dapr concepts](https://docs.dapr.io/concepts/)
