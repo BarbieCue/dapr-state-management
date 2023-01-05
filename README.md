@@ -17,7 +17,8 @@ Thus, _dapr_ completely abstracts the underlying data store for _My service_.
 
 ## Prerequisites
 
-- _dapr_ is [installed](https://docs.dapr.io/getting-started/install-dapr-cli/)
+- [dapr](https://docs.dapr.io/getting-started/install-dapr-cli/)
+- Java (Version >=17)
 
 
 ## Get started
