@@ -11,6 +11,13 @@ directly. Instead, it passes the data to its dapr sidecar and instructs it to st
 Thus, _dapr_ completely abstracts the underlying data store for _My service_.
 
 
+## State Store Component
+
+_dapr_ uses a yaml file to specify the [_state store component_](https://docs.dapr.io/operations/components/setup-state-store/).
+This file is located in `components/local` and it enables us to exchange 
+the underlying state store implementation without making any code changes. 
+
+
 ## Prerequisites
 
 - [dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
