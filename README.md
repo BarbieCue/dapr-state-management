@@ -11,13 +11,6 @@ directly. Instead, it passes the data to its dapr sidecar and instructs it to st
 Thus, _dapr_ completely abstracts the underlying data store for _My service_.
 
 
-## State Store Component
-
-_dapr_ uses a yaml file to specify the [_state store component_](https://docs.dapr.io/operations/components/setup-state-store/).
-This file is located in `components/local` and it enables us to exchange 
-the underlying state store implementation without making any code changes. 
-
-
 ## Prerequisites
 
 - [dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
@@ -49,7 +42,10 @@ curl http://localhost:8080
 ## State store configuration
 
 _dapr_ supports [many](https://docs.dapr.io/reference/components-reference/supported-state-stores/) data stores.
-A config file specifies which concrete data store is used for a project.
+A [yaml config file](https://docs.dapr.io/operations/components/setup-state-store/)
+specifies which concrete state store implementation is used for a project.
+This enables us to exchange the underlying state store implementation without making any code changes.
+
 [From the docs](https://docs.dapr.io/concepts/components-concept/):
 
 _Each component has a specification (or spec) that it conforms to.
@@ -57,7 +53,8 @@ Components are configured at design-time with a YAML file which is stored in eit
 - _A `components/local` folder within your solution, or_
 - _Globally in the `.dapr` folder created when invoking `dapr init`._
 
-In this project, the configuration file is placed inside the _solution_.
+In this project, the configuration file is placed inside the _solution_ (`components/local`).
+
 
 # References
 - [dapr concepts](https://docs.dapr.io/concepts/)
