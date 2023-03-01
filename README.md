@@ -19,6 +19,14 @@ Thus, _dapr_ completely abstracts the underlying data store for _My service_.
 
 ## Get started
 
+### 0. Install dapr
+
+Install dapr on your system. This will start a redis docker container by default.
+
+```shell
+dapr init
+```
+
 ### 1. Build the service
 ```shell
 ./gradlew buildFatJar

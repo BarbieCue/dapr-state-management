@@ -35,7 +35,8 @@ data class MyData(
 )
 
 fun Application.module() {
-    this@module.routing {
+    routing {
+
         get("/") {
 
             val client = HttpClient(CIO) {
